@@ -9,10 +9,23 @@
       content="Copia de pagina Alert Pet para estudos, sobre pets perdidos"
     />
     <meta name="keywords" content="gatos, perdidos, animais, pets" />
+
+    <link rel="icon" href="https://alertpet.com.br/wp-content/uploads/2022/07/cropped-ALERTPET-Favicon-32x32.png" sizes="32x32">
+    
     <title>Gato Perdido São Paulo, SP - Fred | AlertPet</title>
+
+    <!-- Biblioteca jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
+
+
+    <div id="logo">
+
+      <div>
     <a href="" target="_blank">
       <img
         class="social"
@@ -20,7 +33,11 @@
         alt="Logo do botao hamburguer"
       />
     </a>
+  
+      </div>
 
+
+   <div>
     <a href="https://alertpet.com.br/" target="_blank">
       <img
         class="social"
@@ -28,26 +45,37 @@
         alt="Logo do AlertPet"
       />
     </a>
+  </div>
 
+    <div></div>
+
+    </div>
+
+    <div id=titulo>
     <h1>Fred</h1>
+    </div>
+
+
+
+    <div class="container">
 
     <div>
       <img
         class="img-gato"
         src="assets/img/fred-gato-desaparecido-sao-paulo-03-01-2024_lost_image_1704369051.jpg.webp"
-        width="300"
-        height="400"
-        alt="Foto do Fred, gato perdido em São Paulo, SP, com 5 anos de idade, preto e branco, castrado, com recompensa de R$1000,00."
-      />
+        alt="Foto do Fred, gato perdido em São Paulo, SP, com 5 anos de idade, preto e branco, castrado, com recompensa de R$1000,00."/>
+ 
 
+    
       <ul>
-        <li><a href=""> ENVIAR MENSAGEM </a></li>
-        <li><a href=""> IMPRIMIR CARTAZ </a></li>
+        <li class="enviar"><a href=""> 📞 ENVIAR MENSAGEM </a></li>
+        <li class="enviar2"><a href=""> 🖨️ IMPRIMIR CARTAZ </a></li>
       </ul>
 
-      <h5>NOS AJUDE COMPARTILHANDO!</h5>
+      <!-- To do: Adicionar redes sociais -->
+      <!-- <h5>NOS AJUDE COMPARTILHANDO!</h5>
 
-      <div>
+      
         <a href="" target="_blank">
           <img class="social" src="assets/img/" alt="Logo " />
         </a>
@@ -70,28 +98,43 @@
 
         <a href="" target="_blank">
           <img class="social" src="assets/img/" alt="Logo " />
-        </a>
+        </a> -->
       </div>
-    </div>
 
-    <div>
-      <h5>Apelo da Família</h5>
-      <h6>
+<div>
+    <div class="alignBox">
+      <h3 class="centro">Apelo da Família</h3>
+      <p style="margin-bottom: 3rem">
         Por favor ajude a achar meu gatinho, não consigo viver sem ele, ele é
         tudo pra mim.
-      </h6>
+      </p>
 
-      <h4>Gato Perdido RECOMPENSA-SE São Paulo - São Paulo | Fred - 5 anos</h4>
 
-      <h5>GATO DESAPARECIDO EM: 27/12/2023, SÃO PAULO / SÃO PAULO</h5>
+      <h2>Gato Perdido RECOMPENSA-SE São Paulo - São Paulo | Fred - 5 anos</h2>
 
-      <h6>
+      <h5 style="color: red">GATO DESAPARECIDO EM: 27/12/2023, SÃO PAULO / SÃO PAULO</h5>
+
+      <p style="margin-bottom: 3rem">
         Caso tenha informações de um pet desaparecido comunicar imediatamente os
         tutores pelo telefone que está no anúncio.
-      </h6>
+      </p>
 
-      <h5>Informações do Pet</h5>
-      <table>
+      <script>
+        function mostrarTabela() {
+          $("#petTable").toggle();
+      }
+
+      function mostrarTabela2() {
+          $("#petTable2").toggle();
+      }
+
+      function mostrarTabela3() {
+          $("#petTable3").toggle();
+      }
+      </script>
+
+      <h5 onclick="mostrarTabela()" class="clique">Informações do Pet</h5>
+      <table id="petTable">
         <tr>
           <th>Nome</th>
           <td>Fred</td>
@@ -126,8 +169,8 @@
         </tr>
       </table>
 
-      <h5>Informações do desaparecimento</h5>
-      <table>
+      <h5 onclick="mostrarTabela2()" class="clique">Informações do desaparecimento</h5>
+      <table id="petTable2">
         <tr>
           <th>Endereço</th>
           <td>Aclimação</td>
@@ -154,7 +197,14 @@
         </tr>
       </table>
 
-      <h5>Informações Adicionais</h5>
+      <h5 onclick="mostrarTabela3()" class="clique">Informações Adicionais</h5>
+      <p id="petTable3">
+        Gato preto e branco, olhos amarelos, tem uma pupila maior que a outra.  
+      </p>
+
+        
+
+      <h3>Informações do Responsável</h3>
       <table>
         <tr>
           <th>Nome</th>
@@ -166,19 +216,16 @@
         </tr>
       </table>
 
-      <h4>Informações do Responsável</h4>
-      <table>
-        <tr>
-          <th>Nome</th>
-          <td>Rafaela</td>
-        </tr>
-        <tr>
-          <th>Whatsapp</th>
-          <td>(11)99202-4454</td>
-        </tr>
-      </table>
-
-      <a href=""> ENVIAR MENSAGEM </a>
+      
+      <p class="clique2"> ENVIAR MENSAGEM </p>
+      
+      </div>
     </div>
+    </div>
+
+    </div>
+
+  
+
   </body>
 </html>
